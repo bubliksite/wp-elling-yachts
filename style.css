@@ -1,0 +1,44 @@
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.bg-dark-blue {
+    background-color: #1C2148;
+}
+
+nav li {
+    margin-left: .5rem;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav a.active {
+    color: #C0B481;
+}
+
+nav a:hover {
+    color: #C0B481;
+    text-decoration: underline;
+}
+
+.material-icons-outlined {
+    font-family: 'Material Icons';
+}
+
+.navbar-toggler .material-icons-outlined {
+    font-size: 48px;
+    color: #C0B481;
+}
+
+.social-images-group img {
+    margin-left: 1rem;
+}
+
+@media (max-width: 1200px) {
+    nav a {
+        font-size: .8rem;
+    }
+}
