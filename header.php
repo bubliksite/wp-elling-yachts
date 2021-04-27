@@ -19,25 +19,33 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container justify-content-between">
                 <a class="navbar-brand" href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/Logo.svg" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button id="menu-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="material-icons-outlined">menu</span>
                 </button>
                 <div id="navbarContent" class="collapse navbar-collapse justify-content-end">
-                    <ul class="navbar-nav d-flex align-items-center">
-                        <li class="nav-item"><a class="nav-link active" href="/">Главная</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Компания</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Яхты "Elling"</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">О верфи</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Новости</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Брокераж Яхт</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Услуги судовладельцам</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link d-flex m-1" href="">
-                                <img class="me-1" src="<?php echo get_template_directory_uri(); ?>/images/icon-call.svg" alt="">
-                            </a>
-                        </li>
-                    </ul>
+                    <?php
+                    wp_nav_menu( array(
+                        'menu_class' => 'navbar-nav d-flex align-items-center',
+                        'theme_location'=>'menu',
+                        'container' => false,
+                    ) );
+                    ?>
+<!--                    <ul class="navbar-nav d-flex align-items-center">-->
+<!--                        <li class="nav-item"><a class="nav-link active" href="/">Главная</a></li>-->
+<!--                        <li class="nav-item"><a class="nav-link" href="">Компания</a></li>-->
+<!--                        <li class="nav-item"><a class="nav-link" href="">Яхты "Elling"</a></li>-->
+<!--                        <li class="nav-item"><a class="nav-link" href="">О верфи</a></li>-->
+<!--                        <li class="nav-item"><a class="nav-link" href="">Новости</a></li>-->
+<!--                        <li class="nav-item"><a class="nav-link" href="">Брокераж Яхт</a></li>-->
+<!--                        <li class="nav-item"><a class="nav-link" href="">Услуги судовладельцам</a></li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link d-flex m-1" href="">-->
+<!--                                <img class="me-1" src="--><?php //echo get_template_directory_uri(); ?><!--/images/icon-call.svg" alt="">-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
                 </div>
+
             </div>
         </nav>
     </header>
