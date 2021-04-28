@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
         <title><?php bloginfo('name'); wp_title(); ?></title>
         <?php wp_head(); ?>
     </head>
@@ -30,22 +31,7 @@
                         'container' => false,
                     ) );
                     ?>
-<!--                    <ul class="navbar-nav d-flex align-items-center">-->
-<!--                        <li class="nav-item"><a class="nav-link active" href="/">Главная</a></li>-->
-<!--                        <li class="nav-item"><a class="nav-link" href="">Компания</a></li>-->
-<!--                        <li class="nav-item"><a class="nav-link" href="">Яхты "Elling"</a></li>-->
-<!--                        <li class="nav-item"><a class="nav-link" href="">О верфи</a></li>-->
-<!--                        <li class="nav-item"><a class="nav-link" href="">Новости</a></li>-->
-<!--                        <li class="nav-item"><a class="nav-link" href="">Брокераж Яхт</a></li>-->
-<!--                        <li class="nav-item"><a class="nav-link" href="">Услуги судовладельцам</a></li>-->
-<!--                        <li class="nav-item">-->
-<!--                            <a class="nav-link d-flex m-1" href="">-->
-<!--                                <img class="me-1" src="--><?php //echo get_template_directory_uri(); ?><!--/images/icon-call.svg" alt="">-->
-<!--                            </a>-->
-<!--                        </li>-->
-<!--                    </ul>-->
                 </div>
-
             </div>
         </nav>
     </header>

@@ -26,6 +26,8 @@ add_action('admin_init', 'remove_editor');
 /** Включаем меню **/
 register_nav_menu('menu', 'Главное меню');
 
+/** Включаем картинки **/
+add_theme_support( 'post-thumbnails' );
 
 /** Создаем новый тип записей - Custom **/
 //add_action('init', 'custom');
