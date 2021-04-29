@@ -14,15 +14,17 @@ Version: 1.0
 
 <?php get_header(); ?>
 
-<section class="main">
-    <div class="container d-flex justify-content-start align-items-end h-100 pb-5">
-        <h1 class="font-weight-bold pb-5">
-            ELLING YACHT <span class="text-gold">E6</span> <br>
-            МОЩНОСТЬ И ЭЛЕГАНТНОСТЬ
-
-        </h1>
-    </div>
-</section>
+    <section class="main pb-5">
+        <div class="container d-flex justify-content-between align-items-end h-100 pb-5">
+            <h1 class="font-weight-bold">
+                ELLING YACHT <span class="text-gold">E6</span> <br>
+                МОЩНОСТЬ И ЭЛЕГАНТНОСТЬ
+            </h1>
+            <a href="/e6" class="btn btn-gold text-uppercase pt-2 d-flex align-items-center">
+                <span class="mr-2">Открой для себя Elling 6 </span> <img src="<?php echo get_template_directory_uri(); ?>/images/icon-chevron-right.svg" alt="">
+            </a>
+        </div>
+    </section>
 
 <?php
 
@@ -65,7 +67,7 @@ $posts = [258, 256, 152]
         </div>
     </div>
 </section>
-<section class="image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/second-background.png')">
+<section class="image parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/second-background.png">
 </section>
     <section class="new-yacht py-5">
         <div class="container py-5">
@@ -98,9 +100,8 @@ $posts = [258, 256, 152]
             </div>
         </div>
     </section>
-<section class="image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/third-background.png')">
-
-</section>
+    <section class="image parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/third-background.png">
+    </section>
     <section class="new-yacht py-5">
         <div class="container py-5">
             <div class="row">

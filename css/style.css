@@ -62,7 +62,7 @@ nav a {
     padding: 5px;
 }
 
-.current-menu-item a {
+.current-menu-item > a {
     color: #C0B481;
 }
 
@@ -148,6 +148,15 @@ section.news .img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translateY(100px);
+}
+
+.img {
+    overflow: hidden;
+}
+
+.caption.active {
+    transform: translateX(0);
 }
 
 .caption:hover {
@@ -178,6 +187,34 @@ section.news .img {
 .navigation .page-numbers.current {
     color: #fff;
     background-color: #1C2148;
+}
+
+.all-yachts_card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 340px;
+    overflow: hidden;
+    transform: translateY(0);
+}
+
+.all-yachts_card, .all-yachts_card * {
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+.caption {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.all-yachts_card .hidden_down {
+    transform: translateY(120px);
+}
+
+.all-yachts_card:hover {
+    background-color: rgba(0,0,0, .5);
+    background-blend-mode: color;
 }
 
 @media (max-width: 1200px) {
