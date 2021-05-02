@@ -15,14 +15,22 @@ Version: 1.0
 <?php get_header(); ?>
 
     <section class="main pb-5">
-        <div class="container d-flex justify-content-between align-items-end h-100 pb-5">
-            <h1 class="font-weight-bold">
-                ELLING YACHT <span class="text-gold">E6</span> <br>
-                МОЩНОСТЬ И ЭЛЕГАНТНОСТЬ
-            </h1>
-            <a href="/e6" class="btn btn-gold text-uppercase pt-2 d-flex align-items-center">
-                <span class="mr-2">Открой для себя Elling 6 </span> <img src="<?php echo get_template_directory_uri(); ?>/images/icon-chevron-right.svg" alt="">
-            </a>
+        <div class="container d-flex justify-content-center align-items-end h-100 pb-5">
+            <div class="row w-100">
+                <div class="col-md-6">
+                    <h1 class="font-weight-bold">
+                        ELLING YACHT <span class="text-gold">E6</span> <br>
+                        МОЩНОСТЬ И ЭЛЕГАНТНОСТЬ
+                    </h1>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-end">
+                        <a href="/e6" class="btn btn-gold text-uppercase pt-2 d-flex align-items-center" style="width: max-content">
+                            <span class="mr-2">Открой для себя Elling 6 </span> <img src="<?php echo get_template_directory_uri(); ?>/images/icon-chevron-right.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

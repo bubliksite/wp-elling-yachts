@@ -18,7 +18,7 @@ Version: 1.0
     <div class="container py-5">
         <h1 class="text-gold text-uppercase mb-5"><? echo the_title() ?></h1>
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 mb-4">
                 <img width="100%" src="<?php echo get_template_directory_uri(); ?>/images/Logo_3.svg" alt="">
             </div>
             <div class="col-lg-9 font-open-sans">
