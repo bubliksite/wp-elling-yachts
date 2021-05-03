@@ -10,13 +10,13 @@ body {
 }
 
 .btn {
-    padding: 10px 30px;
+    padding: 10px 30px !important;
     box-sizing: border-box;
-    color: #fff;
-    text-transform: uppercase;
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
 }
 
 .btn:hover {
@@ -24,7 +24,7 @@ body {
 }
 
 .btn-gold {
-    background: linear-gradient(90deg, #C0B481 54.67%, #D8D4C1 95.15%);
+    background: linear-gradient(90deg, #C0B481 54.67%, #D8D4C1 95.15%) !important;
 }
 
 .yachts_loop .btn {
@@ -45,6 +45,93 @@ a.text-gold:hover {
 
 .text-main {
     color: #575757;
+}
+
+.feedback {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.feedback hr {
+    border-bottom: 1px solid #C0B481 !important;
+}
+
+.contact_info {
+    margin-bottom: 30px !important;
+}
+
+.contact_info input::placeholder {
+    color: #575757 !important;
+    font-size: 16px !important;
+}
+
+.contact_info input {
+    padding: 15px !important;
+    height: 100% !important;
+    border: 1px solid #575757;
+}
+
+.feedback .col-md-6 {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+
+.feedback .col-md-6.first_col {
+    padding-left: 7.5px !important;
+}
+
+.feedback .col-md-6.last_col {
+    padding-right: 7.5px !important;
+}
+
+.subheader {
+    color: #C0B481;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    padding-bottom: .25rem !important;
+    border-bottom: 1px solid #C0B481;
+}
+
+.subheader p {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-family: 'Exo 2', sans-serif !important;
+}
+
+.form-control {
+    height: 25px !important;
+    border: 1px solid #575757 !important;
+}
+
+.form-group {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 15px !important;
+    min-width: 20px !important;
+    height: 25px !important;
+}
+
+.form-group label {
+    display: flex !important;
+    align-items: center;
+    font-weight: normal !important;
+    margin-right: 15px;
+
+}
+
+.form-group .radio, .form-group .checkbox {
+    padding-bottom: 10px !important;
+}
+
+.form-group div {
+    width: 100%;
+}
+
+.form-group p {
+    font-size: 16px !important;
 }
 
 nav li {

@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
-<? echo the_content(); ?>
+<div class="container my-3">
+    <? echo the_content(); ?>
+</div>
 
 <?php get_footer(); ?>

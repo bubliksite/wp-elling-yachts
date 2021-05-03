@@ -52,7 +52,7 @@ foreach ($arr as $a) {
                                 data-bs-target="#collapseOne"
                                 aria-expanded="true"
                                 aria-controls="collapseOne"
-                                style="text-transform: none; width: 100%;"
+                                style="text-transform: none !important; width: 100%;"
                         >
                             <img
                                     src="<?php echo get_template_directory_uri(); ?>/images/icon-chevron-right.svg"
@@ -62,10 +62,10 @@ foreach ($arr as $a) {
                             Общие
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div id="collapseOne" class="accordion-collapse collapse show card" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div class="row my-4">
-                                <div class="col-md-6">
+                                <div class="col-lg-6">
                                     <p class="lead text-gold text-uppercase mb-0">
                                         ЭКСТЕРЬЕР СПЕЦИФИКАЦИЯ
                                     </p>
@@ -119,7 +119,7 @@ foreach ($arr as $a) {
                                 data-bs-target="#collapseTwo"
                                 aria-expanded="false"
                                 aria-controls="collapseTwo"
-                                style="text-transform: none; width: 100%;"
+                                style="text-transform: none !important; width: 100%;"
                         >
                             <img
                                     src="<?php echo get_template_directory_uri(); ?>/images/icon-chevron-right.svg"
@@ -129,7 +129,7 @@ foreach ($arr as $a) {
                             Интерьер
                         </button>
                     </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div id="collapseTwo" class="accordion-collapse collapse card" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div class="row my-4">
                                 <div class="col-md-6">
@@ -138,35 +138,35 @@ foreach ($arr as $a) {
                                     </p>
                                     <hr class="mt-1" style="border-bottom: 1px solid #C0B481;">
                                     <div class="font-open-sans">
-                                        <? echo CFS()->get('', $id);?>
+                                        <? echo CFS()->get('yachts_interior', $id);?>
                                     </div>
                                     <p class="lead text-gold text-uppercase mb-0">
                                         НИЖНИЙ САЛОН
                                     </p>
                                     <hr class="mt-1" style="border-bottom: 1px solid #C0B481;">
                                     <div class="font-open-sans">
-                                        <? echo CFS()->get('', $id);?>
+                                        <? echo CFS()->get('yachts_down_room', $id);?>
                                     </div>
                                     <p class="lead text-gold text-uppercase mb-0">
                                         КАЮТА ВЛАДЕЛЬЦА
                                     </p>
                                     <hr class="mt-1" style="border-bottom: 1px solid #C0B481;">
                                     <div class="font-open-sans">
-                                        <? echo CFS()->get('', $id);?>
+                                        <? echo CFS()->get('yachts_master_room', $id);?>
                                     </div>
                                     <p class="lead text-gold text-uppercase mb-0">
                                         БОКОВАЯ КАЮТА
                                     </p>
                                     <hr class="mt-1" style="border-bottom: 1px solid #C0B481;">
                                     <div class="font-open-sans">
-                                        <? echo CFS()->get('', $id);?>
+                                        <? echo CFS()->get('yachts_side_room', $id);?>
                                     </div>
                                     <p class="lead text-gold text-uppercase mb-0">
                                         КАМБУЗ
                                     </p>
                                     <hr class="mt-1" style="border-bottom: 1px solid #C0B481;">
                                     <div class="font-open-sans">
-                                        <? echo CFS()->get('', $id);?>
+                                        <? echo CFS()->get('yachts_kambuz_room', $id);?>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -175,7 +175,7 @@ foreach ($arr as $a) {
                                     </p>
                                     <hr class="mt-1" style="border-bottom: 1px solid #C0B481;">
                                     <div class="font-open-sans">
-                                        <? echo CFS()->get('', $id);?>
+                                        <? echo CFS()->get('yachts_up_room', $id);?>
                                     </div>
                                     <p class="lead text-gold text-uppercase mb-0">
                                         НОСОВАЯ КАЮТА
@@ -183,21 +183,33 @@ foreach ($arr as $a) {
                                     </p>
                                     <hr class="mt-1" style="border-bottom: 1px solid #C0B481;">
                                     <div class="font-open-sans">
-                                        <? echo CFS()->get('', $id);?>
+                                        <? echo CFS()->get('yachts_forward_room', $id);?>
                                     </div>
                                     <p class="lead text-gold text-uppercase mb-0">
                                         САНУЗЕЛ
                                     </p>
                                     <hr class="mt-1" style="border-bottom: 1px solid #C0B481;">
                                     <div class="font-open-sans">
-                                        <? echo CFS()->get('', $id);?>
+                                        <? echo CFS()->get('yachts_toilet_room', $id);?>
                                     </div>
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    <img style="max-width: 100%" src="<? echo CFS()->get('yachts_scheme', $id);?>" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="bordered my-3">
+                <h3 class="text-gold font-weight-normal text-uppercase text-center py-2 m-0">
+                    Список опций <? echo get_the_title($id); ?>
+                </h3>
+            </div>
+            <section class="my-2 feedback">
+                <? $form = CFS()->get('yachts_shortcode_form', $id); ?>
+                <? echo do_shortcode($form); ?>
+            </section>
         </div>
     </div>
 </section>

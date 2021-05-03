@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="11ae234b-532f-4957-9bcd-efb0487aa142" name="jino.ellings">
-        <fileTransfer rootFolder="/var/www/domains/elling.bublik.site/wp-content/themes/new_elling" accessType="SFTP" host="ovz3.serzh-moskalenko.noklm.vps.myjino.ru" port="49172" sshConfigId="532417ae-435a-41ca-9f1f-d2a2a436b3ec" sshConfig="root@ovz3.serzh-moskalenko.noklm.vps.myjino.ru:49172 key" keyPair="true">
+      <webServer id="224f4411-4ef1-4cc6-855d-cef7b01b1301" name="jino.yachts" url="http://yachts.bublik.site">
+        <fileTransfer rootFolder="/domains/yachts.bublik.site/wp-content/themes/new_elling" host="serzh-moskalenko.myjino.ru" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
