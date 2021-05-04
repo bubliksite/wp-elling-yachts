@@ -2,13 +2,10 @@
         <footer class="bg-dark-blue py-5 text-white">
             <div class="container">
                 <div class="mx-lg-5 px-lg-5 d-flex justify-content-between row">
-                    <div class="logos text-center col-lg-6">
+                    <div class="logos text-center d-flex align-items-center justify-content-center col-lg-6">
                         <div class="logos d-flex justify-content-center">
-                            <img style="max-width: 50%;" src="<?php echo get_template_directory_uri(); ?>/images/Logo_1.svg" alt="">
-                            <img style="max-width: 50%;" src="<?php echo get_template_directory_uri(); ?>/images/Logo_2.svg" alt="">
-                        </div>
-                        <div>
-                            <img style="max-width: 100%;" src="<?php echo get_template_directory_uri(); ?>/images/Logo_3.svg" alt="">
+                            <img class="mr-3" style="max-width: 50%;" src="<?php echo get_template_directory_uri(); ?>/images/Logo_1.svg" alt="">
+                            <img style="max-width: 50%;" src="<?php echo get_template_directory_uri(); ?>/images/Logo_3.svg" alt="">
                         </div>
                     </div>
                     <div class="captions col-lg-6 d-flex justify-content-center align-items-center">
