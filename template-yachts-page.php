@@ -77,7 +77,7 @@ Version: 1.0
                         </div>
                         <div class="bg-white py-4 px-5">
                             <h2 class="text-gold text-uppercase mb-3">
-                                План этажей <?echo the_title();?>
+                                План палуб <?echo the_title();?>
                             </h2>
                             <img style="max-width: 100%" src="<?echo CFS()->get('yachts_etages')?>" alt="">
                         </div>
@@ -87,7 +87,7 @@ Version: 1.0
         </div>
     </div>
 </section>
-<section class="yachts_description my-5">
+<section class="yachts_description">
     <div class="container py-5">
         <div class="row">
             <div class="col-lg-6 mb-3">

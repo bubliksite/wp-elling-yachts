@@ -14,7 +14,7 @@ Version: 1.0
 
 <?php get_header(); ?>
 
-    <section class="main pb-5">
+    <section class="main pb-md-5 pb-sm-1">
         <div class="container d-flex justify-content-center align-items-end h-100 pb-5">
             <div class="row w-100">
                 <div class="col-md-6">
@@ -41,11 +41,11 @@ $posts = [258, 256, 152]
 ?>
 
 <section class="yachts py-5">
-    <div class="container py-5">
+    <div class="container py-md-5 py-sm-2">
         <h1 class="text-gold text-uppercase">
             Наши яхты
         </h1>
-        <p class="lead my-5">Модельный ряд верфи Elling Yachts</p>
+        <p class="lead my-md-5 my-sm-2">Модельный ряд верфи Elling Yachts</p>
         <div class="yachts_loop">
             <div class="row">
             <?php

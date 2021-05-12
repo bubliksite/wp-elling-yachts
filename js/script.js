@@ -3,9 +3,9 @@ let menuItemHasChild = document.getElementsByClassName('menu-item-has-children')
 let subMenu = document.getElementsByClassName('sub-menu')
 
 
-document.getElementById('menu-toggler').addEventListener('click', ()=> {
-	document.getElementById('navbarContent').classList.toggle('show')
-})
+// document.getElementById('menu-toggler').addEventListener('click', ()=> {
+// 	document.getElementById('navbarContent').classList.toggle('show')
+// })
 
 for (let i=0; i<menuItemHasChild.length; i++) {
 	menuItemHasChild[i].classList.add('dropdown')

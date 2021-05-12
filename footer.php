@@ -2,13 +2,24 @@
         <footer class="bg-dark-blue py-5 text-white">
             <div class="container">
                 <div class="mx-lg-5 px-lg-5 d-flex justify-content-between row">
-                    <div class="logos text-center d-flex align-items-center justify-content-center col-lg-6">
-                        <div class="logos d-flex justify-content-center">
-                            <img class="mr-3" style="max-width: 50%;" src="<?php echo get_template_directory_uri(); ?>/images/Logo_1.svg" alt="">
-                            <img style="max-width: 50%;" src="<?php echo get_template_directory_uri(); ?>/images/Logo_3.svg" alt="">
+                    <div class="logos text-center d-flex align-items-center justify-content-center col-lg-4">
+                        <div class="logos px-3">
+                            <img class="mr-3" style="max-width: 100%;" src="<?php echo get_template_directory_uri(); ?>/images/Logo_1.svg" alt="">
+                            <img style="max-width: 100%;" src="<?php echo get_template_directory_uri(); ?>/images/Logo_3.svg" alt="">
                         </div>
                     </div>
-                    <div class="captions col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="col-lg-4">
+                        <div class="footer_menu text-white text-uppercase">
+                            <?php
+                            wp_nav_menu( array(
+                                'menu_class' => 'navbar-nav d-flex align-items-center',
+                                'theme_location'=>'menu',
+                                'container' => false,
+                            ) );
+                            ?>
+                        </div>
+                    </div>
+                    <div class="captions col-lg-4 d-flex justify-content-center align-items-center">
                         <div>
                             <p class="lead">Наши контакты</p>
                             <p>
